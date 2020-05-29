@@ -1,5 +1,8 @@
 import { ErrorMessageType, ErrorsKeyType } from "./types";
 
+/**
+ * このアプリケーションで取りうる例外の種類とそれに対応したエラーコード
+ */
 export const ERRORS: { [key in ErrorsKeyType]: ErrorMessageType } = {
   USER_RESOURCE_NOTFOUND: {
     statusCode: 404,

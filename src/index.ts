@@ -1,3 +1,7 @@
+/**
+ * @file usecase
+ */
+
 import * as http from "http";
 import { Usecase } from "./Usecase";
 import { Service } from "./Service";
@@ -5,8 +9,12 @@ import { Repository } from "./Repository";
 import { ShouldHandleError } from "./ShouldHandleError";
 import { ERRORS } from "./Error";
 
+/** HTTP Server */
 const server = http.createServer();
 
+/**
+ * routeの起点. /users?id={uid} のみサポートしている
+ */
 server.on("request", (req, res) => {
   const usecase = new Usecase(new Service(new Repository()));
   try {
