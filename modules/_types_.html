@@ -66,6 +66,15 @@
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>file</dt>
+						<dd><p>このアプリケーションで扱う型を集約するファイル</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -75,6 +84,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#errormessagetype" class="tsd-kind-icon">Error<wbr>Message<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#errorskeytype" class="tsd-kind-icon">Errors<wbr>Key<wbr>Type</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#uid" class="tsd-kind-icon">UID</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-module"><a href="_types_.html#usertype" class="tsd-kind-icon">User<wbr>Type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -88,9 +99,14 @@
 					<div class="tsd-signature tsd-kind-icon">Error<wbr>Message<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>statusCode<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ojisan-toybox/typedoc-test/blob/c063422/src/types.ts#L1">src/types.ts:1</a></li>
+							<li>Defined in <a href="https://github.com/ojisan-toybox/typedoc-test/blob/4048e07/src/types.ts#L8">src/types.ts:8</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>エラーオブジェクトを投げるときのデータ構造</p>
+						</div>
+					</div>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
@@ -109,9 +125,65 @@
 					<div class="tsd-signature tsd-kind-icon">Errors<wbr>Key<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"USER_RESOURCE_NOTFOUND"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"INVALID_USER_ID_FORMAT"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"UNEXPECTED_ERROR"</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ojisan-toybox/typedoc-test/blob/c063422/src/types.ts#L6">src/types.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ojisan-toybox/typedoc-test/blob/4048e07/src/types.ts#L16">src/types.ts:16</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>このアプリケーションで取りうる例外の種類</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="uid" class="tsd-anchor"></a>
+					<h3>UID</h3>
+					<div class="tsd-signature tsd-kind-icon">UID<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{ </span>__UID<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ojisan-toybox/typedoc-test/blob/4048e07/src/types.ts#L32">src/types.ts:32</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>opaqueを実現。</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>see</dt>
+							<dd><p><a href="https://flow.org/en/docs/types/opaque-types/">https://flow.org/en/docs/types/opaque-types/</a></p>
+							</dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-module">
+					<a name="usertype" class="tsd-anchor"></a>
+					<h3>User<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">User<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/ojisan-toybox/typedoc-test/blob/4048e07/src/types.ts#L21">src/types.ts:21</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>id<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>userId</p>
+									</div>
+								</div>
+							</li>
+							<li class="tsd-parameter">
+								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<div class="lead">
+										<p>userName</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -154,6 +226,12 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
 						<a href="_types_.html#errorskeytype" class="tsd-kind-icon">Errors<wbr>Key<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_.html#uid" class="tsd-kind-icon">UID</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-module">
+						<a href="_types_.html#usertype" class="tsd-kind-icon">User<wbr>Type</a>
 					</li>
 				</ul>
 			</nav>
